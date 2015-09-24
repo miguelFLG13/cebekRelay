@@ -45,7 +45,7 @@ namespace Cebek_DLL_T100
             instance.DataBits = 8;
             instance.Connect();
 
-            //First deactivate two outputs
+            //First deactivate the two outputs
             instance.Reset();
 
             //Active the two outputs
@@ -56,7 +56,7 @@ namespace Cebek_DLL_T100
             int milliseconds = 1000;
             Thread.Sleep(milliseconds);
 
-            //Deactivate two outputs and disconect
+            //Deactivate two outputs and disconnect
             instance.Reset();
             instance.Disconnect();
         }
